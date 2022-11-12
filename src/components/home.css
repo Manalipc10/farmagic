@@ -13,7 +13,7 @@
 }
 
 .farminfo{
-    font-size: small;
+    font-size: medium;
     background-color: var(--extralight);
     border: none;
 }
@@ -32,4 +32,27 @@
 
 .farmhouse-img:hover{
     transform: scale(1.05);
+}
+
+.roominfo{
+    font-size: small;
+    background-color: var(--extralight);
+    border: none;
+}
+
+.roomtext{
+    margin-top:30px;
+    margin-right: 50px;
+    margin-left: 15px;
+    padding-right: 20px;
+    font-size: medium;
+}
+ 
+.t_room{
+    color: var(--brown);
+}
+.card{
+    background-color: var(--extralight);
+    border-radius: 40px;
+    border-width: 2px;
 }

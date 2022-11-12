@@ -3,9 +3,12 @@ import "./home.css"
 import c_img1 from "../Media/c_img1.png"
 import c_img2 from "../Media/c_img2.png"
 import c_img3 from "../Media/c_img3.png"
+import room1 from "../Media/room1.jpeg"
+import room2 from "../Media/room2.jpeg"
+import room3 from "../Media/room3.png"
 import farmhouse from "../Media/farmhouse.jpeg"
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
-import {Container} from 'react-bootstrap'
+import {Card, Container} from 'react-bootstrap'
 
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -53,7 +56,40 @@ function Home() {
           </div>
         </div>
        </Container>
-     </div>
+<br></br>
+<Container class="rooms">
+  <Card>
+        <div class="row">
+          <div class="col-8">
+          <Carousel>
+          <Carousel.Item>
+            <img className="d-block w-100" src={room2} alt="room" />
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img className="d-block w-100" src={room1} alt="room" />
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img className="d-block w-100" src={room3} alt="room" />
+          </Carousel.Item>
+
+        </Carousel>
+        </div>
+
+        <div class="col-4">
+            <div className="card roominfo">
+              <div className="card-body roomtext">
+                <h5 class="card-title t_room">Rooms</h5>
+                <br></br>
+                <p class="card-text1">Cozy, spacious, well furnished, and self-contained rooms.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </Card>
+       </Container>
+</div>
   );
 }
 
