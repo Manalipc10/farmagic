@@ -53,6 +53,5 @@
 }
 .card{
     background-color: var(--extralight);
-    border-radius: 40px;
     border-width: 2px;
 }
